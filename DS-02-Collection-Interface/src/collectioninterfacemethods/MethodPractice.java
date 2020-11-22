@@ -19,7 +19,7 @@ public class MethodPractice {
         System.out.println("coll.add(10) : " + coll.add(10));
 
         // adding multiple items in one shot
-        coll.addAll(Arrays.asList(1,2,3,4,5,6,7,9));
+        coll.addAll(Arrays.asList(0,1,2,3,4,5,6,7,9,10,11,12));
         System.out.println(coll);
 
         // getting size
@@ -47,9 +47,17 @@ public class MethodPractice {
         System.out.println("coll.removeAll(Arrays.asList(30, 2, 4)) : " + coll.removeAll(Arrays.asList(30, 2, 4)));
 
         // retains All
+        coll.retainAll(Arrays.asList(1, 9, 12));
+        System.out.println(coll);
 
+        // remove If
+        coll.addAll(Arrays.asList(1,2,3,10,11,12,13,14));
+        coll.removeIf(eachItem -> eachItem >= 10);
+        System.out.println(coll);
 
-
+        // Turning into array
+        Integer [] inArray = coll.toArray(new Integer[coll.size()]);
+        System.out.println(Arrays.toString(inArray));
     }
 
 }
