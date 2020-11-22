@@ -15,6 +15,8 @@ public class MethodPractice {
         coll.add(30);
         coll.add(10);
         System.out.println(coll);
+        // add method returns boolean
+        System.out.println("coll.add(10) : " + coll.add(10));
 
         // adding multiple items in one shot
         coll.addAll(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
@@ -25,6 +27,10 @@ public class MethodPractice {
 
         // checking empty or not
         System.out.println("coll.isEmpty() : " + coll.isEmpty());
+
+        // remove item
+        coll.remove(7);
+        System.out.println(coll);
 
 
     }
