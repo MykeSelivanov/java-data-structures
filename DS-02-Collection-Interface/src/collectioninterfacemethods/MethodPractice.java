@@ -24,6 +24,8 @@ public class MethodPractice {
         System.out.println("cool.size() : " + coll.size());
 
         // checking empty or not
+        System.out.println("coll.isEmpty() : " + coll.isEmpty());
+
 
     }
 
