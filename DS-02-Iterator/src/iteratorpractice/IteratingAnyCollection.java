@@ -34,9 +34,13 @@ public class IteratingAnyCollection {
 
         // remove all numbers > 15
         while (numsIterator.hasNext()) {
-            Integer number =
+            Integer number = numsIterator.next(); // you need this temp variable, in order to shift iterator's postion each time you're calling next() methos
+            System.out.print(number + " - ");
+            if (number > 15) numsIterator.remove();
         }
 
+        System.out.println();
+        System.out.println(numbers);
 
 
 
