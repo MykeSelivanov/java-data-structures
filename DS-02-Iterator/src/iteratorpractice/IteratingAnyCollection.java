@@ -10,10 +10,25 @@ public class IteratingAnyCollection {
          // ConcurrentModificationException example
          for (Integer each: coll) {
              System.out.println(each);
-          //   if (each >= 5) coll.remove(each);
+          //   if (each > 5) coll.remove(each);
          }
 
          Iterator<Integer> myIterator = coll.iterator();
+
+         // hasNext(); return boolean, does not move iterator to the next location
+        System.out.println(myIterator.hasNext());
+
+        // next(); moves iterator to the next location
+        System.out.println(myIterator.next()); // 1
+        System.out.println(myIterator.next()); // 2
+        System.out.println(myIterator.next()); // 3
+
+        // remove(); removes item from the current iterator's location
+        myIterator.remove(); //3 was removed
+        System.out.println(coll);
+
+
+
 
 
 
