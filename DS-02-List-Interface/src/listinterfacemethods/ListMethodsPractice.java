@@ -20,5 +20,23 @@ public class ListMethodsPractice {
         // updating items in certain index (replacing old value with the new one)
         list.set(0, 99.0);
         System.out.println(list);
+
+        //getting indexes of certain items
+        System.out.println("list.indexOf(4.0) : " + list.indexOf(4.0));
+        // if you have multiple values it will return index of first occurrence
+        System.out.println("Index of first occurrence of 3.0 : " + list.indexOf(3.0));
+        // In order to get the last index of the element - lastindexOf
+        System.out.println("Last index of 3.0 : " + list.lastIndexOf(3.0));
+
+        // In case when you don't have the value you're looking index for, method will return you -1
+        System.out.println("If item not found : " + list.indexOf(100d));
+
+        //remove(Object) - comes from Collection
+        //remove(index) - comes from List
+        list.remove(1);
+        System.out.println(list);
+
+
+
     }
 }
