@@ -32,11 +32,25 @@ public class ListMethodsPractice {
         System.out.println("If item not found : " + list.indexOf(100d));
 
         //remove(Object) - comes from Collection
-        //remove(index) - comes from List
+        //remove(index) - comes from List returns the element that you are removing
         list.remove(1);
         System.out.println(list);
 
+        // addAll at certain index, after insertion, rest the elements will shift
+        list.addAll(2, Arrays.asList(88D, 99D));
 
+        // replaceAll (Function : UnaryOperator
+        System.out.print("Replace each item with new value increased by 5 : ");
+        list.replaceAll(each -> each + 5);
+        System.out.println(list);
 
+        // sort
+        // using null as a comparator will sort list in the natural ascending order, not a good practice
+        //list.sort(null);
+        list.sort(Comparator.naturalOrder());
+        System.out.println(list);
+
+        list.sort(Comparator.reverseOrder());
+        System.out.println(list);
     }
 }
