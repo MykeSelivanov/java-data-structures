@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class MethodPractice {
+public class CollectionMethodsPractice {
     public static void main(String[] args) {
 
         // Common Collection interface methods
