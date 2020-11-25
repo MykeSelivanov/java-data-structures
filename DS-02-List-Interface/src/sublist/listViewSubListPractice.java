@@ -23,6 +23,5 @@ public class listViewSubListPractice {
         System.out.println(partOfListView);
         System.out.println(list);
 
-
     }
 }
