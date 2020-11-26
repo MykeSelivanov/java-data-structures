@@ -75,8 +75,6 @@ public class SpecialListIterator {
         }
         System.out.println(list);
 
-
-
     }
 
 }
