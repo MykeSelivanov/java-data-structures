@@ -8,5 +8,6 @@ public class GetKthNodeFromTheLast {
         myLinkedList.insertInOrder(12);
         myLinkedList.printLinkedList();
         System.out.println(myLinkedList.size);
+
     }
 }
