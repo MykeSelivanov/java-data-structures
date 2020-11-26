@@ -22,7 +22,19 @@ public class SpecialListIterator {
             System.out.print("listIterator.nextIndex() : " + listIterator.nextIndex());
             var item = listIterator.next();
             System.out.println(" Item is: " + item);
+
+            if (item < 5) {
+                listIterator.remove(); // every time you remove item index is shifting to the previous location
+            }
         }
+        System.out.println(numbers);
+
+        // hasPrevious(), previousIndex(), previous()
+        System.out.println("listIterator.hasPrevious() : " + listIterator.hasPrevious());
+        System.out.println("listIterator.previousIndex() : " + listIterator.previousIndex());
+        System.out.println("listIterator.previous() : " + listIterator.previous());
+
+        // traversing the list from the back to front
 
 
 
