@@ -9,7 +9,7 @@ public class IteratingAnyCollection {
 
          // ConcurrentModificationException example
          for (Integer each: coll) {
-             System.out.println(each);
+             System.out.print(each + " ");
           //   if (each > 5) coll.remove(each);
          }
 
