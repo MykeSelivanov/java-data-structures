@@ -16,7 +16,7 @@ public class SpecialListIterator {
         System.out.println("listIterator.hasNext() : " + listIterator.hasNext());
 
         // returns next element's index
-        System.out.println("listIterator.nextIndex() : " + listIterator.nextIndex()); // since we did not start itertind it will return next index 0
+        System.out.println("listIterator.nextIndex() : " + listIterator.nextIndex()); // since we did not start iterating it will return next index 0
 
         while(listIterator.hasNext()){
             System.out.print("listIterator.nextIndex() : " + listIterator.nextIndex());
@@ -34,7 +34,46 @@ public class SpecialListIterator {
         System.out.println("listIterator.previousIndex() : " + listIterator.previousIndex());
         System.out.println("listIterator.previous() : " + listIterator.previous());
 
-        // traversing the list from the back to front
+        // traversing  list from the back to front
+        List <String> list = new ArrayList<>(Arrays.asList("one","two","three","four","five","six","seven", "ten"));
+        var listIter = list.listIterator();
+
+        // traverse from front to back first
+        while (listIter.hasNext()) {
+            listIter.next();
+        }
+
+        // iterating from back to front
+        while (listIter.hasPrevious()) {
+            System.out.print("Previous Index : " + listIter.previousIndex());
+            var previousItem = listIter.previous();
+            System.out.println(" Item is : " + previousItem);
+
+            if (previousItem.startsWith("t")) {
+                listIter.remove();
+            }
+        }
+        System.out.println(list);
+
+        // set()
+        while (listIter.hasNext()) {
+            var nextItem = listIter.next();
+
+            if (nextItem.length() == 3) {
+                listIter.set("number");
+            }
+        }
+        System.out.println(list);
+
+        // add()
+        while(listIter.hasPrevious()) {
+            var previousItem = listIter.previous();
+
+            if(previousItem.equals("number")) {
+                listIter.add("zero");
+            }
+        }
+        System.out.println(list);
 
 
 
