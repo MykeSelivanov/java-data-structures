@@ -54,5 +54,6 @@ public class ExpressionBalanceCheck {
             }
         }
         return (myStack.isEmpty());
+
     }
 }
