@@ -18,6 +18,14 @@ public class SpecialListIterator {
         // returns next element's index
         System.out.println("listIterator.nextIndex() : " + listIterator.nextIndex()); // since we did not start itertind it will return next index 0
 
+        while(listIterator.hasNext()){
+            System.out.print("listIterator.nextIndex() : " + listIterator.nextIndex());
+            var item = listIterator.next();
+            System.out.println(" Item is: " + item);
+        }
+
+
+
     }
 
 }
