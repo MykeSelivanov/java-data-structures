@@ -23,6 +23,8 @@ public class ComparingObjects {
 
         System.out.println(personList);
 
+        Collections.sort(personList); // Person class implements Comparable interface allowing us to compare Persons
+
 
     }
 
