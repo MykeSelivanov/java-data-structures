@@ -22,8 +22,8 @@ public class ComparingObjects {
                                         new Person("Adam", 35), new Person("Oksana", 37)));
 
         System.out.println(personList);
-
         Collections.sort(personList); // Person class implements Comparable interface allowing us to compare Persons
+        System.out.println(personList);
 
 
     }

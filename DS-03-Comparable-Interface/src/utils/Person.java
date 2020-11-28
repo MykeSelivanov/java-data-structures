@@ -18,6 +18,12 @@ public class Person implements Comparable<Person> {
     @Override
     public int compareTo(Person o) {
 
-        return 0;
+        if(this.name.charAt(0) > o.name.charAt(0)) {
+            return 1;
+        } else if (this.name.charAt(0) == o.name.charAt(0)) {
+            return 0;
+        } else {
+            return -1;
+        }
     }
 }
