@@ -1,5 +1,7 @@
 package practice;
 
+import utils.Person;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -14,6 +16,12 @@ public class ComparingObjects {
         System.out.println(list);
         Collections.sort(list);
         System.out.println(list);
+
+        List<Person> personList = new ArrayList<>();
+        personList.addAll(Arrays.asList(new Person("John",20), new Person("Marry", 21),
+                                        new Person("Adam", 35), new Person("Oksana", 37)));
+
+        System.out.println(personList);
 
 
     }
