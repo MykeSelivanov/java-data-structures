@@ -1,4 +1,4 @@
-package comparatorinterface;
+package comparableinterface;
 
 import utils.Person;
 
