@@ -16,9 +16,15 @@ public class ComparatorInterfacePractice {
         personList.add(new Person("Josh", 47));
         personList.add(new Person("Helena", 18));
 
-        Comparator<Person> comp = new PersonNameComparator();
-        Collections.sort(personList, comp);
+        Comparator<Person> nameComparator = new PersonNameComparator();
+        Collections.sort(personList, nameComparator);
         System.out.println(personList);
+
+        Comparator<Person> ageComparator = Comparator.comparing(person -> person.getAge());
+        Collections.sort(personList, ageComparator);
+        System.out.println(personList);
+
+
 
     }
 }
