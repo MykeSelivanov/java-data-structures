@@ -15,15 +15,24 @@ public class ComparatorInterfacePractice {
         personList.add(new Person("Anna", 27));
         personList.add(new Person("Josh", 47));
         personList.add(new Person("Helena", 18));
+        personList.add(new Person("Helena", 19));
+        personList.add(new Person("Helena", 20));
 
-        Comparator<Person> nameComparator = new PersonNameComparator();
-        Collections.sort(personList, nameComparator);
-        System.out.println(personList);
+        Comparator<Person> comparator = new PersonNameComparator(); // comparing logic implemeted in PersonNameComparator class
+        Collections.sort(personList, comparator);
+        System.out.println("Comparing by names : " + personList);
 
-        Comparator<Person> ageComparator = Comparator.comparing(person -> person.getAge());
+        Comparator<Person> ageComparator = Comparator.comparing(person -> person.getAge()); // comparing logic implemented with lambda in comparing method
         Collections.sort(personList, ageComparator);
-        System.out.println(personList);
+        System.out.println("Comparing by age : " + personList);
 
+        Comparator<Person> nameDescComparator = (person1, person2) -> person2.getName().compareTo(person1.getName());
+        Collections.sort(personList, nameDescComparator);
+        System.out.println("Reversed(desc) by names: " + personList);
+
+        Comparator<Person> nameDescThenAgeComparator = nameDescComparator.thenComparing(ageComparator.reversed()); // comparing by names desc and then comparing by age desc
+        Collections.sort(personList, nameDescThenAgeComparator);
+        System.out.println("Name desc and then age desc comparator : " + personList);
 
 
     }
