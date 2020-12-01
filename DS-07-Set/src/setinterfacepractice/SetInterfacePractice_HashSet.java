@@ -10,15 +10,15 @@ public class SetInterfacePractice_HashSet {
         // Collection of unique items
         // Set interface -- HashSet is implementing class
 
-        Set<Long> longSet = new HashSet<>();
-        longSet.addAll(Arrays.asList(7L, 7L, 7L, 7L, 10L, 10L, 10L));
+        Set<Long> longSet = new HashSet<>(Arrays.asList(7L, 7L, 7L, 7L, 10L, 10L, 10L));
         System.out.println("longSet.add(50L) : " + longSet.add(50L));
         System.out.println("longSet.add(50L) : " + longSet.add(50L));
         System.out.println("longSet.add(50L) : " + longSet.add(50L));
         System.out.println(longSet.size());
         System.out.println(longSet);
 
-
+        longSet.addAll(Arrays.asList(2L, 3L, 4L, 4L, 4L));
+        System.out.println(longSet);
 
 
     }
