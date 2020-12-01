@@ -12,8 +12,13 @@ public class SetInterfacePractice_HashSet {
 
         Set<Long> longSet = new HashSet<>();
         longSet.addAll(Arrays.asList(7L, 7L, 7L, 7L, 10L, 10L, 10L));
+        System.out.println("longSet.add(50L)" + longSet.add(50L));
+        System.out.println("longSet.add(50L)" + longSet.add(50L));
+        System.out.println("longSet.add(50L)" + longSet.add(50L));
         System.out.println(longSet.size());
         System.out.println(longSet);
+
+
 
 
     }
