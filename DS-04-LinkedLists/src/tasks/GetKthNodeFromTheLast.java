@@ -1,3 +1,5 @@
+package tasks;
+
 import utils.MyLinkedList;
 
 public class GetKthNodeFromTheLast {
