@@ -20,8 +20,17 @@ public class SetInterfacePractice_HashSet {
         longSet.addAll(Arrays.asList(2L, 3L, 4L, 4L, 4L));
         System.out.println(longSet);
 
+        longSet.remove(4L);
+        System.out.println(longSet);
+
+        longSet.add(null);
+        System.out.println(longSet);
+        // Update an item -> check whatever it already exists and if so, remove it then add the item you want
+        if(!longSet.add(null)) {
+            longSet.remove(null);
+            longSet.add(0L);
+        }
+        System.out.println(longSet);
 
     }
-
-
 }
