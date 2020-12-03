@@ -52,7 +52,6 @@ public class CustomTree {
         traversePreOrder(root.leftChild);
         traversePreOrder(root.rightChild);
     }
-
     // InOrder Left-Root-Right
     public void traverseInOrder(){
         traverseInOrder(root);
