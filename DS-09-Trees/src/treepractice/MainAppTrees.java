@@ -16,6 +16,8 @@ public class MainAppTrees {
         System.out.println("\nInOrder Traversal Tree");
         myTree.traverseInOrder();
 
+        System.out.println("\nPostOrder Traversal Tree");
+        myTree.traversePostOrder();
 
     }
 

@@ -42,7 +42,7 @@ public class CustomTree {
             }
         }
     }
-    // Preorder Root-Left-right
+    // PreOrder Root-Left-Right
     public void traversePreOrder(){
         traversePreOrder(root);
     }
@@ -53,15 +53,25 @@ public class CustomTree {
         traversePreOrder(root.rightChild);
     }
 
-    // Preorder Root-Left-right
+    // InOrder Left-Root-Right
     public void traverseInOrder(){
         traverseInOrder(root);
     }
     private void traverseInOrder(Node root){
         if (root == null) return;
-        System.out.print(root.value + ", ");
         traverseInOrder(root.leftChild);
+        System.out.print(root.value + ", ");
         traverseInOrder(root.rightChild);
+    }
+    // PostOrder Left-Right-Root
+    public void traversePostOrder(){
+        traversePostOrder(root);
+    }
+    private void traversePostOrder(Node root){
+        if (root == null) return;
+        traversePostOrder(root.leftChild);
+        traversePostOrder(root.rightChild);
+        System.out.print(root.value + ", ");
     }
 
 
