@@ -1,6 +1,6 @@
 package utils;
 
-public class TreeClass {
+public class CustomTree {
     // Nested Node class
     private class Node{
         private Node leftChild;
@@ -17,7 +17,7 @@ public class TreeClass {
     public void insert(int value){
         Node node = new Node(value);
         // if tree is empty
-        if(isEmpty()) {
+        if(root == null) {
             root = node;
             return;
         }
@@ -43,12 +43,26 @@ public class TreeClass {
         }
     }
     // Preorder Root-Left-right
+    public void traversePreOrder(){
+        traversePreOrder(root);
+    }
     private void traversePreOrder(Node root){
-
+        if (root == null) return;
+        System.out.print(root.value + ", ");
+        traversePreOrder(root.leftChild);
+        traversePreOrder(root.rightChild);
     }
 
-    public boolean isEmpty(){
-        return root == null;
+    // Preorder Root-Left-right
+    public void traverseInOrder(){
+        traversePreOrder(root);
     }
+    private void traverseInOrder(Node root){
+        if (root == null) return;
+        System.out.print(root.value + ", ");
+        traverseInOrder(root.leftChild);
+        traverseInOrder(root.rightChild);
+    }
+
 
 }
