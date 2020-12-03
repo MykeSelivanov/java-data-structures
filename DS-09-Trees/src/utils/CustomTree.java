@@ -55,7 +55,7 @@ public class CustomTree {
 
     // Preorder Root-Left-right
     public void traverseInOrder(){
-        traversePreOrder(root);
+        traverseInOrder(root);
     }
     private void traverseInOrder(Node root){
         if (root == null) return;
