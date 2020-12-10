@@ -30,6 +30,10 @@ public class MyHeap {
         }
     }
 
-    private void swap(int first, int second)
+    private void swap(int first, int second) {
+        var temp = heap[first];
+        heap[first] = heap[second];
+        heap[second] = temp;
+    }
 
 }
