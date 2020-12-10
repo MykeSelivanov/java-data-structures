@@ -12,6 +12,7 @@ public class HeapMainApp {
         myHeap.insert(100);
         myHeap.insert(2);
         myHeap.insert(100);
+        myHeap.insert(150);
 
         myHeap.print();
 
