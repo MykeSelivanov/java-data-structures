@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.Arrays;
+
 public class MyHeap {
 
     private final int [] heap = new int[20];
@@ -34,6 +36,10 @@ public class MyHeap {
         var temp = heap[first];
         heap[first] = heap[second];
         heap[second] = temp;
+    }
+
+    public void print(){
+        System.out.println(Arrays.toString(heap));
     }
 
 }
