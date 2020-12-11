@@ -26,22 +26,32 @@ public class WeightedGraph {
     public int     getWeight  (int source, int target)  { return edges[source][target]; }
 
     public static int getByLabel(Object theLabel){
-        int vertexNum=0;
-        for (int i=0;i<labels.length;i++)
-            if (labels[i]==theLabel) vertexNum=i;
+        int vertexNum = 0;
+        for (int i = 0;i < labels.length;i++)
+            if (labels[i] == theLabel) vertexNum = i;
         return vertexNum;
     }
     public int [] neighbors (int vertex) {
         int count = 0;
-        for (int i=0; i < edges[vertex].length; i++) {
+        for (int i = 0; i < edges[vertex].length; i++) {
             if (edges[vertex][i] > 0) count++;
         }
         final int[] answer= new int[count];
         count = 0;
-        for (int i=0; i < edges[vertex].length; i++) {
+        for (int i = 0; i < edges[vertex].length; i++) {
             if (edges[vertex][i] > 0) answer[count++] = i;
         }
         return answer;
+    }
+
+    public void print () {
+        for (int j = 0; j < edges.length; j++) {
+            System.out.print (labels[j] + ": ");
+            for (int i = 0; i < edges[j].length; i++) {
+                if (edges[j][i] > 0) System.out.print(labels[i] + ":" + edges[j][i] + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
