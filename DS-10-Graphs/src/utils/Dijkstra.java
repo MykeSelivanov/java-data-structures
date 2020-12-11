@@ -32,4 +32,30 @@ public class Dijkstra {
         return pred;  // (ignore pred[s]==0!)
     }
 
+    private static int minVertex (int [] dist, boolean [] v) {
+        int x = Integer.MAX_VALUE;
+        int y = -1;   // graph not connected, or no unvisited vertices
+        for (int i=0; i<dist.length; i++) {
+            if (!v[i] && dist[i]<x) {y=i; x=dist[i];}
+        }
+        return y;
+    }
+
+    public static void printPath (WeightedGraph G, int [] pred, int s, int e) {
+        final java.util.ArrayList path = new java.util.ArrayList();
+        int x = e;
+        while (x!=s) {
+            path.add (0, G.getLabel(x));
+            x = pred[x];
+        }
+        path.add (0, G.getLabel(s));
+        System.out.print (path);
+        int totalDistance=0;
+        for (int i=0; i< path.size()-1;i++) totalDistance+= (G.getWeight(WeightedGraph.getByLabel(path.get(i)),G.getByLabel(path.get(i+1))));
+        System.out.print("  :  Shortest Distance = " + totalDistance);
+        System.out.println();
+        //System.out.println(G.getWeight(WeightedGraph.getByLabel(path.get(i)),G.getByLabel(path.get(i+1))));
+
+    }
+
 }
