@@ -13,6 +13,9 @@ public class SetOfString_HashSet {
         Set<String> stringSet = new HashSet<>();
         stringSet.add("Adam");
         stringSet.add("John");
+        stringSet.add("Adam");
+        stringSet.add("Adam");
+
         /*
         HashCode    |   Value
         2035631     |   Adam
