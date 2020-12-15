@@ -19,6 +19,7 @@ public class SetOfPerson_HashSet {
         System.out.println(p3.hashCode());
 
         // each hashcode will be unique, meaning all of those objects will be added to HashSet
+        // you need to Override hashcode() and equal() methods in Person class in order for HashSet to stop accepting duplicate values
         personSet.add(p1);
         personSet.add(p2);
         personSet.add(p3);

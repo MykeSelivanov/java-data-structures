@@ -17,4 +17,9 @@ public class Person {
                 ", age=" + age +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        return 1000;
+    }
 }
