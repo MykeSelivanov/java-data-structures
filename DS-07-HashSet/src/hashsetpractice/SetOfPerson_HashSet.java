@@ -12,7 +12,7 @@ public class SetOfPerson_HashSet {
 
         Person p1 = new Person("John",20);
         Person p2 = new Person("John",20);
-        Person p3 = new Person("John",20);
+        Person p3 = new Person("John",21);
 
         System.out.println(p1.hashCode());
         System.out.println(p2.hashCode());
