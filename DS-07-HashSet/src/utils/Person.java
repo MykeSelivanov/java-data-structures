@@ -18,15 +18,18 @@ public class Person {
                 '}';
     }
 
-    @Override
-    public int hashCode() {
-        return 1000;
-    }
+//    @Override
+//    public int hashCode() {
+//        return 1000;
+//    }
 
-    @Override
-    public boolean equals(Object obj) {
-        Person p = (Person) obj;
-        if (this.name.equals(p.name) && this.age == p.age) return true;
-        return false;
-    }
+//    @Override
+//    public boolean equals(Object obj) {
+//        Person p = (Person) obj;
+//        if (this.name.equals(p.name) && this.age == p.age) return true;
+//        return false;
+//    }
+
+
+
 }
