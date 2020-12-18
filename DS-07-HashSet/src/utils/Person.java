@@ -32,6 +32,7 @@ public class Person {
 //        return false;
 //    }
 
+    // Generate equals and hashcode methods to check the actual objects equality
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
