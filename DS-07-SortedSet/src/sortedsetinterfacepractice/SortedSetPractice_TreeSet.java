@@ -17,6 +17,9 @@ public class SortedSetPractice_TreeSet {
 
         System.out.println(longTreeSet);
 
+        System.out.println("longTreeSet.first(): " + longTreeSet.first());
+        System.out.println("longTreeSet.last(): " + longTreeSet.last());
+
 
     }
 
