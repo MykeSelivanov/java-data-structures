@@ -26,6 +26,9 @@ public class SetOfPerson_HashSet {
 
         System.out.println(personSet.size());
 
+        // After generating overriden methods in Person class, equals will start checking for the actual objects equality
+        System.out.println(p1.equals(p2));
+
 
     }
 
