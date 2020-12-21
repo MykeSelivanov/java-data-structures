@@ -70,6 +70,12 @@ public class NavigatableSetPractice_TreeSet {
         System.out.println("longNavigableSet.subSet(22L,false,99L,true): " +
                 longNavigableSet.subSet(22L,false,99L,true));
 
+        System.out.println("--- Descending iterator ---");
+        Iterator<Long> descIter = longNavigableSet.descendingIterator();
+        while (descIter.hasNext()) {
+            System.out.print(descIter.next() + " ");
+        }
+
 
 
 
