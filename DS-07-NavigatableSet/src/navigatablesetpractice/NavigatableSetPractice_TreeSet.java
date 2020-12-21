@@ -30,8 +30,18 @@ public class NavigatableSetPractice_TreeSet {
          *      NavigableSet<E> tailSet(E fromElement, boolean inclusive);
          **/
 
+        // returns closest element, lower than parameter, null if there is no such an element, if parameter is equal to
+        // one of the list values, still returns lower value
         System.out.println("longNavigableSet.lower(15L): " + longNavigableSet.lower(15L));
         System.out.println("longNavigableSet.lower(15L): " + longNavigableSet.lower(2L));
+        System.out.println("longNavigableSet.lower(15L): " + longNavigableSet.lower(25L));
+        System.out.println("longNavigableSet.lower(15L): " + longNavigableSet.lower(20L));
+
+        // returns closest element, higher than parameter, null if there is no such an element
+        System.out.println("longNavigableSet.higher(15L): " + longNavigableSet.higher(20L));
+
+
+        System.out.println(longNavigableSet.floor(20L));
 
 
     }
