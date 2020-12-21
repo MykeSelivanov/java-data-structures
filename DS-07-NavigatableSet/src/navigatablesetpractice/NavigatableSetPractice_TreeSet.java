@@ -1,5 +1,6 @@
 package navigatablesetpractice;
 
+import java.util.Arrays;
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
@@ -12,6 +13,7 @@ public class NavigatableSetPractice_TreeSet {
         System.out.println("longNavigableSet.add(39L) : " + longNavigableSet.add(39L));
         System.out.println("longNavigableSet.add(27L) : " + longNavigableSet.add(27L));
         System.out.println("longNavigableSet.add(20L) : " + longNavigableSet.add(20L));
+        System.out.println("longNavigableSet.addAll(Arrays.asList(66L,55L,44L,22L) : " + longNavigableSet.addAll(Arrays.asList(66L,55L,44L,22L)));
 
         System.out.println(longNavigableSet);
 
@@ -23,7 +25,14 @@ public class NavigatableSetPractice_TreeSet {
          *      E pollFirst();
          *      Iterator<E> descendingIterator();
          *      NavigableSet <E> descendingSet();
-         *      */
+         *      NavigableSet<E> subSet(E fromElement, boolean fromInclusive, E toElement, boolean toInclusive);
+         *      NavigableSet <E> headSet(E toElement, boolean inclusive);
+         *      NavigableSet<E> tailSet(E fromElement, boolean inclusive);
+         **/
+
+        System.out.println("longNavigableSet.lower(15L): " + longNavigableSet.lower(15L));
+        System.out.println("longNavigableSet.lower(15L): " + longNavigableSet.lower(2L));
+
 
     }
 
