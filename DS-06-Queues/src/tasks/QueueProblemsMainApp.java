@@ -1,3 +1,7 @@
+package tasks;
+
+import utils.MyQueue;
+
 public class QueueProblemsMainApp {
     public static void main(String[] args) {
         MyQueue<Integer> myqueue=new MyQueue<Integer>();

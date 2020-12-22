@@ -1,3 +1,8 @@
+package tasks;
+
+import utils.MyQueue;
+import utils.MyStack;
+
 public class ReverseFirstKElementsQueue {
     public static MyQueue reverseFirstK(MyQueue myQueue, int k) {
 
