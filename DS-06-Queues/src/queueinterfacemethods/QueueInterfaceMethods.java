@@ -30,7 +30,14 @@ public class QueueInterfaceMethods {
         System.out.println(numQue.remove());
         System.out.println(numQue.poll()); // safer way to remove, avoiding risk to run into exception
 
+        System.out.println(numQue.peek()); // safer way to check the next element in queue, without removing it
+        System.out.println(numQue.element());
+        System.out.println(numQue);
 
+        while (!numQue.isEmpty()) {
+            System.out.println("Removing - " + numQue.poll());
+        }
+        System.out.println(numQue.size());
 
     }
 
