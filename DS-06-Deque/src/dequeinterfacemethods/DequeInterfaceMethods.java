@@ -23,6 +23,22 @@ public class DequeInterfaceMethods {
 
         Deque<Integer> dQue = new ArrayDeque<>();
 
+        dQue.push(1);
+        dQue.push(3);
+        dQue.push(4);
+        dQue.push(6);
+        dQue.push(8);
+        dQue.push(20);
+        System.out.println(dQue);
+
+        System.out.println(dQue.pop());
+        System.out.println(dQue);
+
+        while (!dQue.isEmpty()) {
+            System.out.println("Remove - " + dQue.pop());
+        }
+        System.out.println(dQue);
+
 
     }
 
