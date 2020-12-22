@@ -14,8 +14,8 @@ public class QueueInterfaceMethods {
          *
          *          Throws exception     |   Returns Special value
          * Insert:  add(e)               |  offer(e)
-         * Remove:  remove()             | poll()
-         * Examine: element()            | peek()
+         * Remove:  remove()             |  poll()
+         * Examine: element()            |  peek()
          */
 
         Queue<Integer> numQue = new LinkedList<>();
