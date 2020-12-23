@@ -24,16 +24,48 @@ public class MapInterfacePractice {
 
         // -----Map Interface Methods-----
 
-        // int size();
+        // V put(K key, V value);
+        scoreMap.put("Adam",90);
+        scoreMap.put("John",92);
+        scoreMap.put("Mary",100);
         System.out.println(scoreMap);
 
-        // boolean isEmpty();
-        // boolean containsKey(Object key);
-        // boolean containsValue(Object value);
+        // adding duplicate key
+        System.out.println(scoreMap.put("Mary",77)); // does not create duplicate key, overrides the value for the existing one
+
+        // int size();
+        System.out.println(scoreMap.size());
+
         // V get(Object key);
-        // V put(K key, V value);
+        System.out.println("Mary's score: " + scoreMap.get("Mary"));
+        System.out.println("Adam's score: " + scoreMap.get("Adam"));
+
+        // boolean isEmpty();
+        System.out.println("Map isEmpty: " + scoreMap.isEmpty());
+
+        // boolean containsKey(Object key);
+        System.out.println("contains key: " + scoreMap.containsKey("John"));
+        System.out.println("contains key: " + scoreMap.containsKey("Alex"));
+
+        // boolean containsValue(Object value);
+        System.out.println("contains value: " + scoreMap.containsValue(77));
+        System.out.println("contains value: " + scoreMap.containsValue(150));
+
         // V remove(Object key);
+        System.out.println("removing key Adam : " + scoreMap.remove("Adam"));
+
         // void putAll(Map<? extends K, ? extends V> m);
+        Map<String,Integer> testMap = new HashMap<>();
+        testMap.put("Victor",33);
+        testMap.put("Jack",44);
+        testMap.put("Ernest",55);
+        System.out.println(testMap);
+
+        scoreMap.putAll(testMap);
+        System.out.println(scoreMap);
+
+
+
         // void clear();
 
         // ---Java 8 addition---
