@@ -64,9 +64,9 @@ public class MapInterfacePractice {
         scoreMap.putAll(testMap);
         System.out.println(scoreMap);
 
-
-
         // void clear();
+        testMap.clear();
+        System.out.println(testMap);
 
         // ---Java 8 addition---
         // V putIfAbsent(K key, V value);
