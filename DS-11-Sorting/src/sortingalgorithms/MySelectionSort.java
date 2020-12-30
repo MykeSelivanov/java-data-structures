@@ -1,4 +1,4 @@
-package bubblesort;
+package sortingalgorithms;
 
 public class MySelectionSort {
 
