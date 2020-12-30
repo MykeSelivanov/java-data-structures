@@ -1,6 +1,7 @@
 package runner;
 
 import bubblesort.MyBubbleSort;
+import bubblesort.MySelectionSort;
 
 import java.util.Arrays;
 
@@ -12,6 +13,10 @@ public class SoringMainApp {
         // Bubble sort
         var myBubbleSort = new MyBubbleSort();
         System.out.println(Arrays.toString(myBubbleSort.bubbleSort(myArray)));
+
+        // Selection sort
+        var mySelectionSort = new MySelectionSort();
+        System.out.println(Arrays.toString(mySelectionSort.selectionSort(myArray)));
 
     }
 
