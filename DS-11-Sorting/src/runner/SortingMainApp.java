@@ -1,13 +1,10 @@
 package runner;
 
-import bubblesort.MyBubbleSort;
-import bubblesort.MyInsertionSort;
-import bubblesort.MyMergeSort;
-import bubblesort.MySelectionSort;
+import sortingalgorithms.*;
 
 import java.util.Arrays;
 
-public class SoringMainApp {
+public class SortingMainApp {
     public static void main(String[] args) {
 
         var myArray = new int[] {8,2,4,1,3,-1,0};
@@ -35,6 +32,13 @@ public class SoringMainApp {
         System.out.println("Merge sort for: " + Arrays.toString(myArray));
         var myMergeSort = new MyMergeSort();
         myMergeSort.mergeSort(myArray);
+        System.out.println(Arrays.toString(myArray));
+
+        // Quick Sort
+        myArray = new int[]{8,2,4,1,3,-1,0};
+        System.out.println("Quick sort for: " + Arrays.toString(myArray));
+        var myQuickSort = new MyQuickSort();
+        myQuickSort.quickSort(myArray);
         System.out.println(Arrays.toString(myArray));
 
 
