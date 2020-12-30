@@ -1,6 +1,4 @@
-package bubblesort;
-
-import java.util.Arrays;
+package sortingalgorithms;
 
 public class MyMergeSort {
     public void mergeSort(int [] array){
