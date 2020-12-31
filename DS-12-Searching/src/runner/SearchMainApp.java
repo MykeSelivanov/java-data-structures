@@ -28,6 +28,10 @@ public class SearchMainApp {
         var myJumpSearch = new MyJumpSearch();
         System.out.println("Jump search: " + myJumpSearch.jumpSearch(myArray, 111));
 
+        // Exponential search
+        var myExponentialSearch = new MyExponentialSearch();
+        System.out.println("Exponential search: " + myExponentialSearch.exponentialSearch(myArray, 4));
+
     }
 
 }
