@@ -69,13 +69,21 @@ public class MapInterfacePractice {
         System.out.println(testMap);
 
         // ---Java 8 addition---
+
         // V putIfAbsent(K key, V value);
+        scoreMap.putIfAbsent("Mary", 100);
+        scoreMap.putIfAbsent("Mary2", 100);
+        System.out.println("ScoreMap: " + scoreMap);
+
         // V getOrDefault(Object key, V defaultValue);
+
         // boolean remove(Object key, Object value);
+
         // boolean replace(K key, V oldValue, V newValue);
+
         // V replace(K key, V value);
 
-        //
+
 
     }
 
