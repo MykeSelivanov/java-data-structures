@@ -79,7 +79,12 @@ public class MapInterfacePractice {
         System.out.println("Get Alex's score: " + scoreMap.get("Alex")); // gives null
         System.out.println("Get Alex's score: " + scoreMap.getOrDefault("Alex",-1));
 
-        // boolean remove(Object key, Object value);
+        // boolean remove(Object key, Object value); - takes 2 params, will remove value only when your key and value match
+        System.out.println("Remove Jack's score: " + scoreMap.remove("Jack"));
+        System.out.println("scoreMap: " + scoreMap);
+        System.out.println("Remove Victor's score with 2 params remove: " + scoreMap.remove("Victor", 55));
+        System.out.println("scoreMap: " + scoreMap);
+
 
         // boolean replace(K key, V oldValue, V newValue);
 
