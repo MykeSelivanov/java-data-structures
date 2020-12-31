@@ -1,9 +1,6 @@
 package runner;
 
-import searchingalgorithms.MyBinarySearchIterative;
-import searchingalgorithms.MyBinarySearchRecursive;
-import searchingalgorithms.MyLinearSearch;
-import searchingalgorithms.MyTernarySearch;
+import searchingalgorithms.*;
 
 public class SearchMainApp {
     public static void main(String[] args) {
@@ -26,6 +23,10 @@ public class SearchMainApp {
         // Ternary search
         var myTernarySearch = new MyTernarySearch();
         System.out.println("Ternary search: " + myTernarySearch.ternarySearch(myArray, 5));
+
+        // Jump search
+        var myJumpSearch = new MyJumpSearch();
+        System.out.println("Jump search: " + myJumpSearch.jumpSearch(myArray, 111));
 
     }
 
