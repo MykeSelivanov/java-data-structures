@@ -75,7 +75,9 @@ public class MapInterfacePractice {
         scoreMap.putIfAbsent("Mary2", 100);
         System.out.println("ScoreMap: " + scoreMap);
 
-        // V getOrDefault(Object key, V defaultValue);
+        // V getOrDefault(Object key, V defaultValue); - gives the value if present or default if key is not found
+        System.out.println("Get Alex's score: " + scoreMap.get("Alex")); // gives null
+        System.out.println("Get Alex's score: " + scoreMap.getOrDefault("Alex",-1));
 
         // boolean remove(Object key, Object value);
 
