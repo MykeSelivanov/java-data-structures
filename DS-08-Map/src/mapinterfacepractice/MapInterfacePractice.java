@@ -87,10 +87,13 @@ public class MapInterfacePractice {
         System.out.println("Remove Victor's score with 2 params remove, value is matching: " + scoreMap.remove("Victor", 33));
         System.out.println("scoreMap: " + scoreMap);
 
+        // V replace(K key, V value); - replace item when key match
+        System.out.println("Replace Mary score from 77 to 144: " + scoreMap.replace("Mary", 144));
+
         // boolean replace(K key, V oldValue, V newValue); - 1 check if key exist, 2 checks if value is matching, 3 if 1 and 2 = true, replacement with new value
+        System.out.println();
 
 
-        // V replace(K key, V value);
 
 
 
