@@ -91,7 +91,7 @@ public class MapInterfacePractice {
         System.out.println("Replace Mary score from 77 to 144: " + scoreMap.replace("Mary", 144));
 
         // boolean replace(K key, V oldValue, V newValue); - 1 check if key exist, 2 checks if value is matching, 3 if 1 and 2 = true, replacement with new value
-        System.out.println();
+        System.out.println("Replace Mary score with oldValue not matching: " + scoreMap.replace("Mary", 55, 222));
 
 
 
