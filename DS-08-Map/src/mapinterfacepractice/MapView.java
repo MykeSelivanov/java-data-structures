@@ -12,6 +12,8 @@ public class MapView {
         scoreMap.put("Mary",55);
         scoreMap.put("Pete",35);
         scoreMap.put("Glen",41);
+        scoreMap.put("Erica",46);
+        scoreMap.put("Claudia",95);
 
         System.out.println(scoreMap);
 
@@ -43,7 +45,10 @@ public class MapView {
 
         for (Map.Entry<String,Integer> eachEntry: allEntries) {
             System.out.println(eachEntry);
+            System.out.println("Key: " + eachEntry.getKey() + " value: " + eachEntry.getValue());
         }
+
+
 
 
     }
