@@ -39,6 +39,11 @@ public class MapView {
         // seen as one entry, there are 3 methods available in entry interface:
         // getValue(), setValue(), getKey()
 
+        Set<Map.Entry<String, Integer>> allEntries = scoreMap.entrySet();
+
+        for (Map.Entry<String,Integer> eachEntry: allEntries) {
+            System.out.println(eachEntry);
+        }
 
 
     }
