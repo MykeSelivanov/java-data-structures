@@ -30,7 +30,8 @@ public class SortedMapInterfacePractice {
         // K firstKey();
         // K lastKey();
         // SortedMap<K,V> subMap(K fromKey, K toKey);
-        // SortedMap<K,V> headMap(K toKey)
+        // SortedMap<K,V> headMap(K toKey);
+        // SortedMap<K,V> tailMap(K toKey);
 
 
     }
