@@ -46,7 +46,13 @@ public class MapView {
         for (Map.Entry<String,Integer> eachEntry: allEntries) {
             System.out.println(eachEntry);
             System.out.println("Key: " + eachEntry.getKey() + " value: " + eachEntry.getValue());
+
+            if (eachEntry.getValue() < 90){
+                eachEntry.setValue(95);
+            }
         }
+
+        System.out.println(scoreMap);
 
 
 
