@@ -24,6 +24,8 @@ public class SortedMapInterfacePractice {
         scoreSortedMap.put("Tom", 67);
         scoreSortedMap.put("Craig", 73);
 
+        System.out.println(scoreSortedMap); // sorted by keys
+
 
     }
 
