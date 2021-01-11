@@ -28,10 +28,12 @@ public class SortedMapInterfacePractice {
 
         // ----------SortedMap methods----------
         // K firstKey();
+        System.out.println("scoreSortedMap.firstKey() : " + scoreSortedMap.firstKey());
         // K lastKey();
         // SortedMap<K,V> subMap(K fromKey, K toKey);
         // SortedMap<K,V> headMap(K toKey);
         // SortedMap<K,V> tailMap(K toKey);
+
 
 
     }
