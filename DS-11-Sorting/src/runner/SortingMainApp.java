@@ -41,7 +41,6 @@ public class SortingMainApp {
         myQuickSort.quickSort(myArray);
         System.out.println(Arrays.toString(myArray));
 
-
     }
 
 }
