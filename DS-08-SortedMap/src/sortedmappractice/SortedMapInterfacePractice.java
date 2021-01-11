@@ -44,7 +44,7 @@ public class SortedMapInterfacePractice {
         System.out.println("scoreSortedMap.headMap(\"abc\") : " + scoreSortedMap.headMap("abc")); // will give all values
 
         // SortedMap<K,V> tailMap(K toKey);
-
+        System.out.println("scoreSortedMap.tailMap(\"Craig\") : " + scoreSortedMap.tailMap("Craig"));
 
 
     }
