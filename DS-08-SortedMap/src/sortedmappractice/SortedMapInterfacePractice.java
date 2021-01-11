@@ -35,11 +35,14 @@ public class SortedMapInterfacePractice {
 
         // ----- view -----
         // SortedMap<K,V> subMap(K fromKey, K toKey);
-        System.out.println(scoreSortedMap.subMap("Alice","Jill"));
-        System.out.println(scoreSortedMap.subMap("abc", "Peter")); // will throw an exception if starting point is not in map
-        System.out.println(scoreSortedMap.subMap("abc", "Peter")); // will throw an exception if starting point is not in map
+        System.out.println("scoreSortedMap.subMap(\"Alice\",\"Jill\") : " + scoreSortedMap.subMap("Alice","Jill"));
+//      System.out.println(scoreSortedMap.subMap("abc", "Peter")); // will throw an exception if starting point is not in map
+        System.out.println(scoreSortedMap.subMap("Jane", "abc")); // will give a subMap from existing starting
 
         // SortedMap<K,V> headMap(K toKey);
+        System.out.println("scoreSortedMap.headMap(\"Jane\") : " + scoreSortedMap.headMap("Jane"));
+        System.out.println("scoreSortedMap.headMap(\"abc\") : " + scoreSortedMap.headMap("abc")); // will give all values
+
         // SortedMap<K,V> tailMap(K toKey);
 
 
