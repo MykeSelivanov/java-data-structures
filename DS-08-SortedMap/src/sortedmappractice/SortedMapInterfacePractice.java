@@ -33,8 +33,12 @@ public class SortedMapInterfacePractice {
         // K lastKey();
         System.out.println("scoreSortedMap.lastKey() : " + scoreSortedMap.lastKey());
 
-
+        // ----- view -----
         // SortedMap<K,V> subMap(K fromKey, K toKey);
+        System.out.println(scoreSortedMap.subMap("Alice","Jill"));
+        System.out.println(scoreSortedMap.subMap("abc", "Peter")); // will throw an exception if starting point is not in map
+        System.out.println(scoreSortedMap.subMap("abc", "Peter")); // will throw an exception if starting point is not in map
+
         // SortedMap<K,V> headMap(K toKey);
         // SortedMap<K,V> tailMap(K toKey);
 
