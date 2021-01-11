@@ -46,6 +46,10 @@ public class SortedMapInterfacePractice {
         // SortedMap<K,V> tailMap(K toKey);
         System.out.println("scoreSortedMap.tailMap(\"Craig\") : " + scoreSortedMap.tailMap("Craig"));
 
+        SortedMap<String, Integer> tailView = scoreSortedMap.tailMap("Jill");
+        tailView.replace("Tom", 1234567);
+        System.out.println(tailView);
+        System.out.println(scoreSortedMap); // changes in subMap will also affect the original Map
 
     }
 
