@@ -1,3 +1,5 @@
+package tasks;
+
 public class MatrixService {
     // This service class has two methods one of which rotates a nxn matrix 90 degrees in-place.
     // Second method just prints the matrix on the console.
