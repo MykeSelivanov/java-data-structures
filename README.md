@@ -4,5 +4,5 @@
 - Sorting + searching algos
 
 ## Usage
-Module names are self-explanatory
+Module names are self-explanatory <br>
 Clone and enjoy!
